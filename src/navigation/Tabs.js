@@ -1,11 +1,11 @@
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '@Screen/Home';
 import Favorites from '@Screen/Favorites';
 import Notifications from '@Screen/Notifications';
 import Account from '@Screen/Account';
 import Icon from 'react-native-vector-icons/dist/Ionicons';
-import { moderateScale } from 'react-native-size-matters';
+import {moderateScale} from 'react-native-size-matters';
 
 const Tabs = () => {
   const Tab = createBottomTabNavigator();
@@ -30,7 +30,7 @@ const Tabs = () => {
         name="Home"
         component={Home}
         options={{
-          tabBarIcon: ({ size, color }) => (
+          tabBarIcon: ({size, color}) => (
             <Icon name="home-sharp" size={size} color={color} />
           ),
         }}
@@ -39,7 +39,7 @@ const Tabs = () => {
         name="Favorites"
         component={Favorites}
         options={{
-          tabBarIcon: ({ size, color }) => (
+          tabBarIcon: ({size, color}) => (
             <Icon name="heart-sharp" size={size} color={color} />
           ),
         }}
@@ -48,7 +48,7 @@ const Tabs = () => {
         name="Notifications"
         component={Notifications}
         options={{
-          tabBarIcon: ({ size, color }) => (
+          tabBarIcon: ({size, color}) => (
             <Icon name="notifications-sharp" size={size} color={color} />
           ),
         }}
@@ -57,7 +57,7 @@ const Tabs = () => {
         name="Account"
         component={Account}
         options={{
-          tabBarIcon: ({ size, color }) => (
+          tabBarIcon: ({size, color}) => (
             <Icon name="person-sharp" size={size} color={color} />
           ),
         }}
